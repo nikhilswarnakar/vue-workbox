@@ -49,6 +49,14 @@ const webpackConfig = merge(baseWebpackConfig, {
       globDirectory: DIST_DIR,
       globPatterns: ['**/*.{html,js,css}'],
       swDest: path.join(DIST_DIR, 'sw.js'),
+      clientsClaim: true,
+      skipWaiting: true,
+      runtimeCaching: [
+        {
+          urlPattern: new RegExp('http://localhost:3000/leaves'),
+          handler: 'staleWhileRevalidate'
+        }
+      ]   
     }),
     // extract css into its own file
     new ExtractTextPlugin({

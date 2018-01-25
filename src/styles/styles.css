@@ -1,0 +1,62 @@
+.app-header {
+  background-color: #467db8;
+  height: 60px;
+  padding: 10px;
+  color: white;
+  display:flex;
+  justify-content: space-between;
+}
+
+.app-heading {
+	margin-top: -10px;
+	padding-left:20px;
+	width: 70%;
+}
+
+.app-logo {
+	margin: 10px !important;
+	text-align: right;
+}
+
+.time-off {
+	background-image: url('./time-off.png');
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+}
+
+.green-tick {
+	background-image: url('./tick.png');
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+}
+
+.panel {
+	margin-top: 20px;
+}
+
+.panel-default > .panel-heading {
+	background-color: #ffffff !important;
+}
+.cds-panel-header__main {
+	padding-left: 20px;
+}
+
+input[type="date"] {
+  background-color : #c1e3f8; 
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.fade.show {
+    opacity: 1;
+}
+
+.modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+	margin-top: 100px;
+}
