@@ -18,6 +18,12 @@ export default {
        return this.$store.getters.count;
      }        
    },
+   created(){
+        console.log('Leave Update created')
+    },
+    mounted(){
+        console.log('Leave Update mounted')
+    },
   beforeUpdate(){
       console.log('total count updated')
   }

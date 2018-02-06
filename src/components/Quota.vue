@@ -28,7 +28,8 @@
           <h4 class="modal-title">Confirmation</h4>
         </div>
         <div class="modal-body">
-          <p>Leave Bid Request Successfuly Submitted.</p>
+          <!-- <p>Leave Bid Request Successfuly Submitted.</p> -->
+          <p>{{ submitmsg }}</p>
         </div>
         <div class="modal-footer">
           <button type="button" class='btn btn-primary' data-dismiss="modal">Close</button>
@@ -52,6 +53,9 @@ export default {
      },
      showQuotaPanel: function() {
        return this.$store.getters.showQuotaPanel;
+     },
+     submitmsg: function() {
+       return this.$store.getters.submitmsg;
      }
    },
     methods:{
@@ -64,10 +68,10 @@ export default {
         }
     },
     created(){
-        console.log('quota created')
+        console.log('Quota created')
     },
     mounted(){
-        console.log('quota mounted')
+        console.log('Quota mounted')
     },
     beforeDestroy(){
         console.log('quota destroyed')
